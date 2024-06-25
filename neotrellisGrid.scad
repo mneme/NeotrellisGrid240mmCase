@@ -7,8 +7,8 @@ $fn=50;
 
 // With this to true the outer edge will be 1cm
 // and the insets will fit without extra supports.
-// This makes it look nice but you'll require a 250mm print pend.
-// Set to false it looks worse but fits on a Prusa MK3 (240mm)
+// This makes it look nice but you'll require a 260mm print pend.
+// Set to false it looks worse but fits on a Prusa MK3 (250mm)
 fullEdge=true;
 
 // Large round supports rendered to help with print bed adhesion/warping
