@@ -2,7 +2,7 @@
 
 Just another take on a 3d printed case for a Neotrellis Grid.
 
-I like heat set insets, I like screws and my print-bed is only 240mm wide hence. Well. This.
+I like heat set insets, I like screws and my print-bed is only 250mm wide hence. Well. This.
 
 Glue the USB-C break out bord down like your life depended on it.
 
