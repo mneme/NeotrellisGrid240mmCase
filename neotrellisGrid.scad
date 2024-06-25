@@ -9,7 +9,7 @@ $fn=50;
 // and the insets will fit without extra supports.
 // This makes it look nice but you'll require a 250mm print pend.
 // Set to false it looks worse but fits on a Prusa MK3 (240mm)
-fullEdge = false;
+fullEdge=true;
 
 // Large round supports rendered to help with print bed adhesion/warping
 // Mostly because it was easier than properly calibrating my machine.
@@ -82,10 +82,20 @@ module inserts(){
 module screwHoles(height){
     for(i=[-1,1]){
         for(j=[-1,0,1]){
-            translate([(sq+edge/1.5)*i, (sq*2)*j, 0]){
-                cylinder(topHeight, r=screwRadius);
-                translate([0,0,height-screwHeadHeight]){
-                    cylinder(screwHeadHeight, r=screwHeadRadius);
+            if(fullEdge){
+                translate([(sq+edge/3)*i, (sq*2+edge/3)*j, 0]){
+                    cylinder(topHeight, r=screwRadius);
+                    translate([0,0,height-screwHeadHeight]){
+                        cylinder(screwHeadHeight, r=screwHeadRadius);
+                    }
+                }
+            } 
+            else {
+                translate([(sq+edge/1.5)*i, (sq*2)*j, 0]){
+                    cylinder(topHeight, r=screwRadius);
+                    translate([0,0,height-screwHeadHeight]){
+                        cylinder(screwHeadHeight, r=screwHeadRadius);
+                    }
                 }
             }
         }
