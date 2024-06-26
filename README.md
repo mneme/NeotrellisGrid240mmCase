@@ -12,7 +12,7 @@ Glue the USB-C break out bord down like your life depended on it.
 * Screws: not a clue. They came in a box. Eh. M3? You probably want to tweak the screw head holes if you don't have the same ones just laying around. Tweak the scad file if it helps. It's messy but at least the variables are easy to find.
 
 # License
-None, free, gratis, do with it what you want.
+None, free, gratis, libre, do with it what you want.
 
 # Guarantee
 None whatsoever. Tolerances might not play with your machine either. 
